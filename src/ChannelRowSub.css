@@ -1,0 +1,47 @@
+.rowsub{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 24px;
+    height: 40px;
+    cursor: pointer;
+    font-weight: 500;
+    user-select: none;
+}
+
+.rowsub:hover {
+    background-color: #383838;
+}
+
+.rowsub__img {
+    margin-right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.rowsub__text {
+    color: rgba(249,249,249,.9);
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: inherit;
+    flex: 1;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.newVid {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #3ea6ff;
+}
+
+.rowsub__online {
+    color: red !important;
+}
+
+.pr-14 {
+    padding-right: 14px;
+}

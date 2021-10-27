@@ -1,0 +1,107 @@
+.options__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    z-index: 99 ;
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.options{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #20202000;
+    border-bottom: 1px solid #373737;
+    padding: 8px 60px;
+    display: flex;
+    transition-duration: .15s;
+    transition-timing-function: cubic-bezier(0.05, 0, 0, 1);
+    z-index: -1;
+}
+
+.options__containerPrevious {
+    content: '<';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.6;
+    font-size: 20px;
+    font-weight: 300;
+    user-select: none;
+    cursor: pointer;
+    background: linear-gradient(to right , rgba(26, 25, 25, 0.959) 80% , transparent) ;
+}
+
+.options__containerNext  {
+    content: '<';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2.6;
+    font-size: 20px;
+    font-weight: 300;
+    user-select: none;
+    cursor: pointer;
+    background: linear-gradient(to left , rgba(26, 25, 25, 0.959) 80% , transparent) ;
+}
+
+/* Hide the scroll bar from the Options component */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.options::-webkit-scrollbar {
+    display: none;
+}
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.options {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+.option {
+    padding: 4px 9px;
+    padding-bottom: 6px;
+    background-color: #373737 ;
+    color: #f8f8f8c9;
+    border: 1px solid #818181;
+    border-radius: 16px;
+    cursor: pointer;
+    user-select: none;
+    margin-right: 12px;;
+    white-space: nowrap;
+    min-width: 32px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: .15s linear;
+}
+
+.option:hover {
+    background-color: #525252 ;
+}
+
+.active {
+    font-weight: 400;
+    background-color: white;
+    color: black;
+    border: none;
+}
+
+.active:hover{
+    font-weight: 400;
+    background-color: white;
+    color: black;
+    border: none;
+}

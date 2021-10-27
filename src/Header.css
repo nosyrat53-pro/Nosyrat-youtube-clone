@@ -1,0 +1,97 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 56px;
+    padding: 0px 16px;
+    border-bottom: 1px solid #373737;
+    background-color: #202020b4;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header__rightIcons {
+    display: flex;
+    align-items: center;
+}
+
+.header__darkIcons  {
+    color: #ffffffe8 !important;
+}
+
+.header__logo {
+    width: 120px;
+    content: url('./logo.svg');
+    margin-right: 30px;  
+}
+
+.header__middle {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    flex: 1;
+}
+
+.header__middle > .MuiIconButton-root {
+    padding: 8px;
+    background-color: rgba(0,0,0,.3);
+    margin-left: 10px;
+}
+
+.header__middle > .MuiIconButton-root:hover{
+    background-color: rgba(0,0,0,.3) !important;
+}
+
+.header__input {
+    display: flex;
+    justify-content: space-between;
+    background-color: #121212;
+    border: 1px solid hsl(0deg 0% 19%);
+    width: 100%;
+}
+
+.header__inputInput {
+    padding:6px;
+    width: 100%;
+}
+
+.header__inputInput > input:focus .header__inputInput {
+    border: 1px solid blue;
+    background-color: red;
+}
+
+.header__inputInput > input {
+    background-color: transparent;
+    outline-width: 0;
+    border: 0;
+    font-size: large;
+    width: 100%;
+    padding: 2px 6px;
+    color: #fafafa;
+}
+
+.header__inputSearchIcon {
+    background-color:  #313131;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header__inputSearchIcon > button {
+    border: none;
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    .header__leftIcons {
+        display: none;
+    }
+
+    .voice:parent {
+        display: none;
+    }
+}

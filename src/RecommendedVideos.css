@@ -1,0 +1,33 @@
+.recommened {
+    flex: .82 ;
+    padding: 40px 30px;
+    padding-right: 0px;
+    padding-bottom: 0;
+    position: relative ;
+}
+
+@media (max-width: 1000px){
+    .recommened {
+        transform: translateX(-250px);
+        width: 100%;
+    }
+}
+
+.recommened::-webkit-scrollbar-button{
+    display: none;
+}
+
+.recommended__videos {
+    position: relative;
+    top: 20px;
+    height: calc(100vh - 118px);
+    overflow-y: scroll;
+    color: white;
+    padding-right: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
